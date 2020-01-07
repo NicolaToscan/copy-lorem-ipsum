@@ -6,7 +6,8 @@
     <meta charset="utf-8">
 
     <title>Lorem Ipsum copy paste</title>
-    <meta name="description" content="Just by entering this site the first paragraph of Lorem Ipsum will be copied in your clipboard.">
+    <meta name="description"
+        content="Just by entering this site the first paragraph of Lorem Ipsum will be copied in your clipboard.">
     <meta name="author" content="Nicola Toscan">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -21,10 +22,10 @@
         <h1>Lorem Ipsum copy paste</h1>
     </header>
 
-    <h2 onclick="updatePar(null)" >You're text has been copied to your clipboard</h2>
+    <h2 onclick="updatePar(null)">You're text has been copied to your clipboard</h2>
     <div class="par-input">
         <label for="nr-paragraphs">PARAGRAPHS</label>
-        <input id="nr-paragraphs" type="number" value="1" min="0" max="15" onchange="updatePar(this.value)"/>
+        <input id="nr-paragraphs" type="number" value="1" min="0" max="15" onchange="updatePar(this.value)" />
     </div>
     <textarea readonly="true"></textarea>
 
@@ -38,11 +39,21 @@
     </div>
 
     <footer>
-        <p>Created by Nicola Toscan - <a target="_blank" href="https://github.com/NicolaToscan/copy-lorem-ipsum">Github</a></p>
+        <p>Created by Nicola Toscan - <a target="_blank"
+                href="https://github.com/NicolaToscan/copy-lorem-ipsum">Github</a></p>
     </footer>
 
     <script src="jquery.js"></script>
     <script src="script.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-79646158-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-79646158-2');
+    </script>
 </body>
 
 </html>
