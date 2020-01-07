@@ -19,8 +19,15 @@ let loremData = [
     "Donec velit dolor, vestibulum ut arcu ut, tincidunt condimentum orci. Mauris viverra a ligula id finibus. Pellentesque bibendum interdum dui, ac ullamcorper ipsum facilisis dictum. Proin fringilla odio ut dui tristique, vitae commodo tellus vehicula. Nam justo justo, commodo nec volutpat quis, iaculis a dolor. Donec vitae justo egestas, pellentesque eros congue, venenatis justo. Mauris ornare tortor quis rutrum porta.",
 ];
 
+let lastValue = 1;
+
 
 function updatePar(value) {
+    if (value !== undefined && value !== null)
+        lastValue = value;
+    else
+        value = lastValue;
+
     $('textarea').val(loremData.slice(0, value).join("\n\n"))
     navigator.clipboard.writeText(loremData.slice(0, value).join("\n"))
 
@@ -28,7 +35,7 @@ function updatePar(value) {
     setTimeout(() => {
         $('h2').removeClass('flash')
     }, 100)
-    
+
 }
 
 $(document).ready(() => updatePar(1));
