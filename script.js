@@ -38,5 +38,8 @@ function updatePar(value) {
 
 }
 
-$(document).ready(() => updatePar(1));
+$(document).ready(() =>  {
+    $(document).focus()
+    updatePar(1)
+});
 
