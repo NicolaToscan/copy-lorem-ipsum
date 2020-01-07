@@ -1,0 +1,92 @@
+body {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+body {
+  margin: 0;
+  background-color: #333;
+  text-align: center;
+}
+header {
+  background-color: #222;
+}
+header h1 {
+  width: 100%;
+  display: inline-block;
+  margin: 0.5em 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+h2 {
+  text-transform: uppercase;
+  margin: 10vh 0 2em;
+  display: inline-block;
+  padding: 1em 0.5em;
+  border: 3px solid #8F8;
+  width: 75vw;
+  max-width: 1024px;
+  transition: 0.4s background-color;
+}
+h2.flash {
+  background-color: white;
+}
+.par-input > * {
+  display: inline-block;
+}
+.par-input input {
+  font-size: 1.2em;
+  width: 3em;
+  text-align: center;
+  height: 1.5em;
+}
+.par-input p {
+  font-size: 1.2em;
+  padding-right: 0.5em;
+}
+textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 80vw;
+  max-width: 1024px;
+  height: 45vh;
+  font-size: 1.2em;
+  padding: 1em;
+}
+textarea,
+input {
+  background: none;
+  background-color: #222;
+  border: none;
+  outline: none;
+  color: white;
+}
+.about {
+  margin-bottom: 5em;
+}
+.about h3 {
+  border-bottom: 1px solid white;
+  display: inline-block;
+  padding: 2em 1.5em 2px;
+  margin: 0;
+}
+.about p {
+  line-height: 1.5em;
+}
+footer {
+  width: 100%;
+}
+footer p {
+  margin: 2px;
+  font-size: 0.8em;
+}
+footer p a,
+footer p a:hover,
+footer p a:visited {
+  text-decoration: none;
+}
+footer p a {
+  color: #8F8;
+}
+footer p a:hover {
+  color: #AFA;
+}
