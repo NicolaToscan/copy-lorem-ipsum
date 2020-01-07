@@ -23,8 +23,8 @@
 
     <h2 onclick="updatePar(null)" >You're text has been copied to your clipboard</h2>
     <div class="par-input">
-        <p>PARAGRAPHS</p>
-        <input type="number" value="1" min="0" max="15" onchange="updatePar(this.value)"/>
+        <label for="nr-paragraphs">PARAGRAPHS</label>
+        <input id="nr-paragraphs" type="number" value="1" min="0" max="15" onchange="updatePar(this.value)"/>
     </div>
     <textarea readonly="true"></textarea>
 
@@ -38,7 +38,7 @@
     </div>
 
     <footer>
-        <p>Created by Nicola Toscan - <a target="_blank" href="//google.it">Github</a></p>
+        <p>Created by Nicola Toscan - <a target="_blank" href="https://github.com/NicolaToscan/copy-lorem-ipsum">Github</a></p>
     </footer>
 
     <script src="jquery.js"></script>
